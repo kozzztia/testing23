@@ -1,0 +1,362 @@
+// font-family: 'Arimo', sans-serif;
+// font-family: 'Cormorant', serif;
+// font-family: 'Road Rage', cursive;
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #1f1f1f;
+    background: #eee;
+}
+// 
+.title{
+    font-family: 'Cormorant', serif;
+    font-size:  40px;
+
+
+}
+.subTitle{
+    font-size: 26px;
+    font-style: light;
+    font-weight: 300;
+    line-height: 39px;
+}
+.btn{
+    color: #fff;
+    width: 200px;
+    height: 45px;
+    background-color: #FF8126;
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    transition: .2s;
+    &:hover{
+        box-shadow:0 0 1px rgb(0, 0, 0);
+    }
+}
+// 
+.main {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+.header {
+    min-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 55px;
+    align-items: center;
+    background: #fff;
+.header__logoWrapper {
+    display: flex;
+    align-items: center;
+    .svg{
+        width: 110px;
+        height: 95px;
+    }
+    margin-right: 60px ;
+}
+.header__nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    .navWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    }
+    .subNavWrapper {
+        // opacity: 0;
+        transform: scale(1, 0);
+        transform-origin: top;
+        position: absolute;
+        transition: .2s;
+    }
+        .navElement {
+            padding: 4px 0;
+            width: 150px;
+            border-radius: 5px;
+            text-align: left;
+
+            transition: .2s;
+            span{
+                display: inline-block;
+                transform: rotate(-90deg);
+                padding: 0 5px;
+            }
+            &:hover{
+                text-decoration: underline;
+                text-decoration-color: #FF8126;
+                background: #ff802613;
+                
+            }
+            &:hover>.subNavWrapper{
+                // opacity: 1;
+                transform: scale(1, 1);
+            }
+
+        }
+}
+.header_tools {
+    display: flex;
+    .tool {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #BFBFBF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+        svg{
+            width:30px;
+            height:30px;
+        }     
+        &:hover{
+            background: #FF8126;
+        }
+    }
+}
+}
+}
+// ------------------------------------baner
+
+.baner {
+    min-width: 1280px;
+    min-height: 500px;
+    background-image: url(../images/backgroung/headerBg.png);
+    background-position: center;
+    padding: 20px 55px;
+    .baner__title {
+        margin: 150px 0 5px 0;
+        font-size: 40px;
+    }
+    .banner__text{
+        margin-block-end: 40px;
+    }
+}  
+    //  -----------------------------cards
+
+    .cards {
+        padding: 20px 55px ;
+        display: flex;
+        flex-direction: column;
+        width: 1280px;
+        background: #fff;
+        .cards__title {
+            text-align: center;
+            margin-top: 50px;
+            span{ 
+                color:  #FF8126;
+            }
+            margin-bottom: 40px;
+        }
+        .cards__wrapper {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            width: 270px;
+            height: 332px;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #F7F5F0;
+            background-repeat: no-repeat;
+            &:hover{
+                box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.213);
+            }
+
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+            &:first-child{
+                background-image: url(../images/pie.png);
+            }
+            &:nth-child(2){
+                background-image: url(../images/honey.png);
+            }
+            &:nth-child(3){
+                background-image: url(../images/avocado.png);
+            }
+            &:nth-child(4){
+                background-image: url(../images/orange.png);
+            }
+
+        }
+        .nameOfItem {
+            font-size: 18px;
+            font-weight: 500;
+            color: #1f1f1f;
+            margin-top: 180px ;
+
+        }
+        .priceOfItem {
+            font-size: 24px;
+            font-weight: 500;
+            color: #FF8126;
+                del{ 
+                    font-size: 18px;
+                    color: #656565;
+                }
+                margin-bottom: 15px;
+        }
+        .cards__button {
+            margin-bottom: 20px;
+        }
+
+    }
+    // --------------------------------------------- article styles
+    .article {
+        width: 1280px;
+        text-align: center;
+        padding: 20px 55px;
+    
+        background: #fff;
+        .article__title {
+            font-weight: 700;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            span{
+                color: #FF8126;
+            }
+
+        }
+        .article__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        .article__subarticle {
+            width: 210px;
+            height: auto;
+            text-align: left;
+            background-repeat: no-repeat;
+            left: 0;
+            top: 0;
+            &:first-child{
+                background-image: url(../images/article/telescope\ 1.svg)
+            }
+            &:nth-child(2){
+                background-image: url(../images/article/buy.svg)
+            }
+            &:nth-child(3){
+                background-image: url(../images/article/support\ 1.svg)
+            }
+            &:nth-child(4){
+                background-image: url(../images/article/winner\ 1.svg)
+            }
+            &:nth-child(5){
+                background-image: url(../images/article/heart\ 1.svg)
+            }
+
+        }
+        .article__subtitle {
+            margin-top: 70px;
+            margin-bottom:10px ;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .article__text {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 40px;
+        }
+    }
+    // ---------------------------------howMakeFood
+
+    .makeFoodArticle {
+        min-width: 1280px;
+        height: auto;
+        padding: 20px 55px;
+        background: #fff;
+        display: flex;
+        .makeFoodArticle__box {
+            width: 50%;
+            height: auto;
+            padding-right: 20px;
+            margin-bottom: 80px;
+        }
+        .makeFoodArticle__wrapper {
+            .makeFoodArticle__title {
+                font-size: 40px;
+                margin-bottom: 20px;
+                font-weight: 500;
+                span{
+                    color: #FF8126;
+                }
+            }
+            .makeFoodArticle__subtitle {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 40px;
+             }
+            .makeFoodArticle__text {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                span{
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                    background: #FF8126;
+                    text-align: center;
+                    color: #fff;
+                    margin-right:20px ;
+                } 
+            }
+            .makeFoodArticle__btn {
+                width: 270px;
+                margin-top: 10px;
+            }
+        }
+        .makeFoodArticle__picture {
+            background-image: url(../images/backgroung/hand.png);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+    }   
+// ---------------------------------partner
+
+    .partner {
+        width: 1280px;
+        height: auto;
+        background-image: url(../images/backgroung/Mask\ Group.svg);
+        background-color: #6090C3;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .svg{ width:100px;height: 130px;}
+    .partner__title {
+        color: #fff;
+        font-size: 40px ;
+        font-weight: 700px;
+        font-family: 'Cormorant', serif;
+        margin-bottom: 30px;
+        }
+    .partner__logoWrappert {
+        margin-bottom: 30px;
+    }
+    .partner__btn {
+        width:330px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

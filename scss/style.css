@@ -1,0 +1,72 @@
+body { font-family: 'Poppins', sans-serif; font-size: 16px; color: #1f1f1f; background: #eee; }
+
+.title { font-family: 'Cormorant', serif; font-size: 40px; }
+
+.subTitle { font-size: 26px; font-style: light; font-weight: 300; line-height: 39px; }
+
+.btn { color: #fff; width: 200px; height: 45px; background-color: #FF8126; border-radius: 5px; font-size: 18px; box-shadow: 1px 1px 5px black; transition: .2s; }
+.btn:hover { box-shadow: 0 0 1px black; }
+
+.main { width: 100vw; height: 100%; display: flex; flex-direction: column; align-items: center; }
+.main .header { min-width: 1280px; display: flex; justify-content: space-between; padding: 20px 55px; align-items: center; background: #fff; }
+.main .header .header__logoWrapper { display: flex; align-items: center; margin-right: 60px; }
+.main .header .header__logoWrapper .svg { width: 110px; height: 95px; }
+.main .header .header__nav { font-family: 'Poppins', sans-serif; font-size: 15px; width: 100%; }
+.main .header .header__nav .navWrapper { display: flex; flex-direction: row; justify-content: space-around; position: relative; }
+.main .header .header__nav .subNavWrapper { transform: scale(1, 0); transform-origin: top; position: absolute; transition: .2s; }
+.main .header .header__nav .navElement { padding: 4px 0; width: 150px; border-radius: 5px; text-align: left; transition: .2s; }
+.main .header .header__nav .navElement span { display: inline-block; transform: rotate(-90deg); padding: 0 5px; }
+.main .header .header__nav .navElement:hover { text-decoration: underline; text-decoration-color: #FF8126; background: #ff802613; }
+.main .header .header__nav .navElement:hover > .subNavWrapper { transform: scale(1, 1); }
+.main .header .header_tools { display: flex; }
+.main .header .header_tools .tool { width: 60px; height: 60px; border: 1px solid #BFBFBF; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: .2s; }
+.main .header .header_tools .tool svg { width: 30px; height: 30px; }
+.main .header .header_tools .tool:hover { background: #FF8126; }
+
+.baner { min-width: 1280px; min-height: 500px; background-image: url(../images/backgroung/headerBg.png); background-position: center; padding: 20px 55px; }
+.baner .baner__title { margin: 150px 0 5px 0; font-size: 40px; }
+.baner .banner__text { margin-block-end: 40px; }
+
+.cards { padding: 20px 55px; display: flex; flex-direction: column; width: 1280px; background: #fff; }
+.cards .cards__title { text-align: center; margin-top: 50px; margin-bottom: 40px; }
+.cards .cards__title span { color: #FF8126; }
+.cards .cards__wrapper { margin-top: 25px; display: flex; justify-content: space-between; }
+.cards .card { width: 270px; height: 332px; text-align: center; border-radius: 20px; background-color: #F7F5F0; background-repeat: no-repeat; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+.cards .card:hover { box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.213); }
+.cards .card:first-child { background-image: url(../images/pie.png); }
+.cards .card:nth-child(2) { background-image: url(../images/honey.png); }
+.cards .card:nth-child(3) { background-image: url(../images/avocado.png); }
+.cards .card:nth-child(4) { background-image: url(../images/orange.png); }
+.cards .nameOfItem { font-size: 18px; font-weight: 500; color: #1f1f1f; margin-top: 180px; }
+.cards .priceOfItem { font-size: 24px; font-weight: 500; color: #FF8126; margin-bottom: 15px; }
+.cards .priceOfItem del { font-size: 18px; color: #656565; }
+.cards .cards__button { margin-bottom: 20px; }
+
+.article { width: 1280px; text-align: center; padding: 20px 55px; background: #fff; }
+.article .article__title { font-weight: 700; margin-top: 20px; margin-bottom: 40px; }
+.article .article__title span { color: #FF8126; }
+.article .article__wrapper { display: flex; justify-content: space-between; }
+.article .article__subarticle { width: 210px; height: auto; text-align: left; background-repeat: no-repeat; left: 0; top: 0; }
+.article .article__subarticle:first-child { background-image: url(../images/article/telescope\ 1.svg); }
+.article .article__subarticle:nth-child(2) { background-image: url(../images/article/buy.svg); }
+.article .article__subarticle:nth-child(3) { background-image: url(../images/article/support\ 1.svg); }
+.article .article__subarticle:nth-child(4) { background-image: url(../images/article/winner\ 1.svg); }
+.article .article__subarticle:nth-child(5) { background-image: url(../images/article/heart\ 1.svg); }
+.article .article__subtitle { margin-top: 70px; margin-bottom: 10px; font-size: 25px; font-weight: 700; }
+.article .article__text { font-size: 16px; font-weight: 400; margin-bottom: 40px; }
+
+.makeFoodArticle { min-width: 1280px; height: auto; padding: 20px 55px; background: #fff; display: flex; }
+.makeFoodArticle .makeFoodArticle__box { width: 50%; height: auto; padding-right: 20px; margin-bottom: 80px; }
+.makeFoodArticle .makeFoodArticle__wrapper .makeFoodArticle__title { font-size: 40px; margin-bottom: 20px; font-weight: 500; }
+.makeFoodArticle .makeFoodArticle__wrapper .makeFoodArticle__title span { color: #FF8126; }
+.makeFoodArticle .makeFoodArticle__wrapper .makeFoodArticle__subtitle { font-size: 16px; font-weight: 500; margin-bottom: 40px; }
+.makeFoodArticle .makeFoodArticle__wrapper .makeFoodArticle__text { font-size: 16px; font-weight: 500; margin-bottom: 20px; }
+.makeFoodArticle .makeFoodArticle__wrapper .makeFoodArticle__text span { display: inline-block; width: 24px; height: 24px; border-radius: 50%; background: #FF8126; text-align: center; color: #fff; margin-right: 20px; }
+.makeFoodArticle .makeFoodArticle__wrapper .makeFoodArticle__btn { width: 270px; margin-top: 10px; }
+.makeFoodArticle .makeFoodArticle__picture { background-image: url(../images/backgroung/hand.png); background-position: center center; background-size: cover; background-repeat: no-repeat; }
+
+.partner { width: 1280px; height: auto; background-image: url(../images/backgroung/Mask\ Group.svg); background-color: #6090C3; padding: 60px; display: flex; flex-direction: column; align-items: center; }
+.partner .svg { width: 100px; height: 130px; }
+.partner .partner__title { color: #fff; font-size: 40px; font-weight: 700px; font-family: 'Cormorant', serif; margin-bottom: 30px; }
+.partner .partner__logoWrappert { margin-bottom: 30px; }
+.partner .partner__btn { width: 330px; }

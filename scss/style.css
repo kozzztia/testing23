@@ -14,12 +14,12 @@ body { font-family: 'Poppins', sans-serif; font-size: 16px; color: #1f1f1f; back
 .main .header .header__nav { font-family: 'Poppins', sans-serif; font-size: 15px; width: 100%; }
 .main .header .header__nav .navWrapper { display: flex; flex-direction: row; justify-content: space-around; position: relative; }
 .main .header .header__nav .subNavWrapper { transform: scale(1, 0); transform-origin: top; position: absolute; transition: .2s; }
-.main .header .header__nav .navElement { padding: 4px 0; width: 150px; border-radius: 5px; text-align: left; transition: .2s; }
+.main .header .header__nav .navElement { padding: 4px 0; max-width: 200px; border-radius: 5px; text-align: left; background: #fff; transition: .2s; }
 .main .header .header__nav .navElement span { display: inline-block; transform: rotate(-90deg); padding: 0 5px; }
-.main .header .header__nav .navElement:hover { text-decoration: underline; text-decoration-color: #FF8126; background: #ff802613; }
+.main .header .header__nav .navElement:hover { text-decoration: underline; text-decoration-color: #FF8126; }
 .main .header .header__nav .navElement:hover > .subNavWrapper { transform: scale(1, 1); }
 .main .header .header_tools { display: flex; }
-.main .header .header_tools .tool { width: 60px; height: 60px; border: 1px solid #BFBFBF; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: .2s; }
+.main .header .header_tools .tool { width: 60px; height: 60px; border: 1px solid #BFBFBF; background-color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: .2s; }
 .main .header .header_tools .tool svg { width: 30px; height: 30px; }
 .main .header .header_tools .tool:hover { background: #FF8126; }
 
